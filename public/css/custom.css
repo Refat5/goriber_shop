@@ -1,0 +1,244 @@
+html
+{ 
+	height: 100%;
+
+}
+body
+{
+	
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 5rem;
+}
+
+
+.pointer
+{
+	cursor: pointer;
+}
+.hidden
+{
+	display: none;
+}
+
+/*product*/
+.child-row
+{
+	padding-left: 20px;
+	border-left: 1px solid #dfdfdf;
+	background:white ;
+}
+.child-row a.list-group-item
+{
+	border-left: 0px!important;
+}
+.list-group-item.active {
+
+    z-index: 2;
+    color: #000;
+    background-color: #0cd9fb;
+    border-color: #0cd9fb;
+    }
+.product
+{
+	height: 300px;
+    width: 350px;
+  
+}
+.products-item
+{height: 300px;
+    width: 350px;
+  
+
+}
+/*end product*/
+.bg-light {
+
+    background-color: #0cd9fb !important;
+
+}
+.mar-top-20
+{
+	margin-top: 21px;
+}
+.img-style
+{
+	max-height: 200px;
+}
+.footer-btt
+{
+	margin-bottom: -100px;
+	padding: 13px;
+	margin-top: 100px;
+	background: #0cd9fb;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}/*
+
+for slider*/
+
+.carousel-indicators li {
+
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 33px;
+    height: 16px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 9px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 35px;
+
+}
+
+.h5 {
+
+    color: ghostwhite;
+    font-size: 25px !important;
+    font-style: 100xpx;
+    font-weight: bolder;
+    background: auto;
+    text-align: center;
+
+}
+.h2 {
+
+    color: #0cd9fb ;
+    font-size: 60px !important;
+    font-style: 100xpx;
+    font-weight: bolder;
+    background: auto;
+    text-align: center;
+
+}
+
+.btn-warning {
+
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border-radius: 20px;
+
+}
+
+.slider-text {
+
+    text-align: center;
+    margin-left: 228px;
+    margin-bottom: 20px;
+
+}
+/*override*/
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+
+    color: #000;
+    background: white;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    
+    color: #000;
+    background: white;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    
+   color: #000;
+    background: ;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+
+.p_image
+{
+    background-image: 'images/foods/bg_3.jpg';
+}
+
+
+.topFixedBannerProduct{
+    background-image: url("../images/product.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+ }
+ .topBannerOverlay{
+     position: absolute;
+     min-height: 500px;
+     width: 100%;
+     background: rgba(0,0,0,0.6);
+ }
+.topContent{
+    margin-top: 10rem;
+}
+.topTitle{
+    font-family: sans-serif;
+    font-weight:100;
+    color: #ffffff;
+    font-size: 17px;
+}
+.topTitleproduct{
+    font-family: sans-serif;
+    font-weight:700;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.topSubTitle{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.topFixedBannerContact{
+    background-image: url("../images/contact.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+ }
+
+  .topBannerOverlayContact{
+     position: absolute;
+     min-height: 400px;
+     width: 100%;
+     background: rgba(0,0,0,0.6);
+ }
+
+ .about-section {
+  background-image: url('../images/about.jpeg');
+  padding: 50px;
+  text-align: center;
+  
+  color: black;
+}
+ .about-sectionOverlay
+ {
+    position: absolute;
+     padding: 50px;
+     width: 100%;
+     background: rgba(0,0,0,0.6);
+ }

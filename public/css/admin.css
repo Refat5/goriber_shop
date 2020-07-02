@@ -1,0 +1,19 @@
+/*for admin login*/
+
+body
+{
+	background: #21283c;
+	
+}
+
+.card
+{
+	max-width: 550px;
+	background: #113;
+
+  color: white;
+}
+.body
+{
+	background: #8c8888;
+}
