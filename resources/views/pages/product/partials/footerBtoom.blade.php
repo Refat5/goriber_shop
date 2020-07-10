@@ -49,17 +49,20 @@ ul, ol {
     visibility: hidden;
     transition: .22s ease;
 }
+
 </style>
+
 
 
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
         <div class="container">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
-              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+
+              <div class="pr-xl-4 mt-2"><a class="brand" href="index.html"><img src="{{asset('images/logo2.png')}}" height="120px;" width="200"></a>
+                
                 <!-- Rights-->
-                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                <p class="rights mt-4"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
               </div>
             </div>
             <div class="col-md-4">
@@ -91,9 +94,12 @@ ul, ol {
           </div>
         </div>
         <div class="row no-gutters social-container">
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+          <div class="col"><a class="social-inner" href="https://www.messenger.com/t/kiri2ka"><span class="icon mdi mdi-facebook"></span><span>Facebook</span><i class="fa fa-facebook"></i></a></div>
+          <div class="col"><a class="social-inner" href="https://www.instagram.com/abdur.rahim.refat/"><span class="icon mdi mdi-instagram"><i class="fa fa-instagram"></i></span><span>instagram</span></a></div>
+
+
+          <div class="col"><a class="social-inner" href="https://github.com/Refat5"><span class="icon mdi mdi-twitter"><i class="fa fa-github"></i></span><span>
+         </span> Git Hub</a></div>
+          <div class="col"><a class="social-inner" href="https://mail.google.com/mail/u/0/#inbox"><span class="icon mdi mdi-youtube-play"></span><span>google</span><i class="fa fa-google"></i></a></div>
         </div>
       </footer>
