@@ -28,6 +28,7 @@
  	'Sl_No'=>'Sl_No',
  	'Action'=>'Action',
  	'Edit'=>'Edit',
+ 	'Delete'=>'Delete',
  	'Are you sure to delete?'=>'
 Are you sure to delete?',
 'Permanent Delete'=>'Permanent Delete',
