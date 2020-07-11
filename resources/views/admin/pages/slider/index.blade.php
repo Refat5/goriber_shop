@@ -3,7 +3,7 @@
                     <h2 class="card-header" style="text-align: center;">Slider List</h2>
                      @include("admin.pages.message.validate ")
 
-                      <a href="#addModal" class="mt-2" style="margin-left: 80%;"> <button class="btn btn-info "  data-toggle="modal" data-target="#addModal">Add New</button></a>
+                      <a href="#addModal" class="mt-2 mb-2" style="margin-left: 80%;"> <button class="btn btn-success "  data-toggle="modal" data-target="#addModal">Add New</button></a>
 
                        <!-- Add Modal -->
 
@@ -184,9 +184,9 @@
                             <label for="button_text" class="col-md-4 col-form-label text-md-right">{{ __('button_text') }}</label>
 
                             <div class="col-md-6">
-                                <input id="button_url" type="text" class="form-control @error('button_url') is-invalid @enderror"  value="{{ $slider->button_text }}" name="button_url"  autofocus>
+                                <input id="button_text" type="text" class="form-control @error('button_text') is-invalid @enderror"  value="{{ $slider->button_text }}" name="button_text"  autofocus>
 
-                                @error('button_url')
+                                @error('button_text')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

@@ -18,8 +18,8 @@
           @endphp
           @foreach ($sliders as $slider )
 
-            <div class="carousel-item {{ $i == 1 ? 'active':''}} col-md-10 ">
-            <img class="slider" src="{{asset('images/sliders/'.$slider->image)}}" alt="{{$slider->title}}" style="height: 600px;width: 1256px;" >
+            <div class=" p-0 carousel-item {{ $i == 1 ? 'active':''}} col-md-10 ">
+            <img class="slider" src="{{asset('images/sliders/'.$slider->image)}}" alt="{{$slider->title}}" style="height: 600px;width: 1400px;" >
 
             <div class="carousel-caption d-none d-md-block slider-text">
                <h2 class="h2">What's Up Gorib er Bacchara..?</h2>
