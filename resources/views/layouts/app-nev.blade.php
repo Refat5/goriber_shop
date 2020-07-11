@@ -1,3 +1,10 @@
+
+<style type="text/css">
+  .fdesign{font-size: 18px;
+font-weight: 400;
+font-family: initial;}
+</style>
+
 <div class="warpper">
 	
 <!--  Navigation --> 
@@ -13,26 +20,26 @@
    
   <div class="collapse navbar-collapse topTitle" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item {{Route::is('index') ? 'active' : '' }}">
-        <a class="nav-link" href="{{route('index')}}">Home <span class="sr-only">(current)</span></a>
+       <li class="nav-item {{Route::is('index') ? 'active' : '' }}">
+        <i class="fa fa-home " style="margin-left: 30px;"></i>   <a class="nav-link fdesign" href="{{route('index')}}">Home </a>
       </li>
 
         <li class="nav-item {{Route::is('about') ? 'active' : '' }}">
-        <a class="nav-link" href="{{route('about')}}">About <span class="sr-only">(current)</span></a>
+        <i class="fa fa-address-card"style="margin-left: 30px;"></i><a class="nav-link fdesign" href="{{route('about')}}">About</a>
       </li>
 
        <li class="nav-item {{Route::is('product') ? 'active' : '' }}">
-        <a class="nav-link" href="{{route('product')}}">Product <span class="sr-only">(current)</span></a>
+         <i class="fa fa-product-hunt"style="margin-left: 30px;"></i><a class="nav-link fdesign" href="{{route('product')}}">Product </a>
       </li>
 
         <li class="nav-item {{Route::is('wishlist') ? 'active' : '' }}">
-        <a class="nav-link" id="wishlist" href="{{route('wishlist')}}">Wish List <span class="sr-only">(current)</span></a>
+         <i class="fa fa-heart" style="margin-left: 30px;"></i><a class="nav-link" id="wishlist" href="{{route('wishlist')}}">Wish List</a>
       </li>
 
        <li class="nav-item {{Route::is('contact') ? 'active' : '' }}">
-        <a class="nav-link" href="{{route('contact')}}">Contact <span class="sr-only">(current)</span></a>
+         <i class="fa  fa-phone"style="margin-left: 30px;"></i><a class="nav-link" href="{{route('contact')}}">Contact </a>
       </li>
-     
+    
       
 
       <li class="nav-item">
@@ -50,9 +57,10 @@
      <ul class="navbar-nav ml-auto">
 
       <li>
+        <i class="fa fa-cart-plus" style="margin-left: 30px;" ></i>
         <a  href="{{route('carts')}}">
           <button class="badge badge-warning" style="height: 100%;width: 100%;">
-            <span class="mt-1">Cart</span>
+            <span>Cart</span>
              <span class="badge badge-danger"  id="total_item">{{App\Cart::totalItem()}}</span>
             
           </button>
