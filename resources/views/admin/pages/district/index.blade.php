@@ -2,6 +2,8 @@
 @section('content')
                     <h2 class="card-header" style="text-align: center;">District List</h2>
                      @include("admin.pages.message.validate ")
+
+                     <a href="{{route('admin.district.create')}}" style="margin-left: 80%;"> <button class="btn btn-success mt-2 mb-2 ">Add New</button></a>
                     
                     <table class="table table-bordered striped" id="dataTable">
                       <thead>
@@ -28,8 +30,10 @@
 
 
                             <td>
+
+                             <!--  for encription id  -->
                           
-                           <a href="{{route('admin.district.edit', $dis->id)}}"> <button class="btn btn-success">Edit</button></a>
+                           <a href="{{route('admin.district.edit', Crypt::encryptString($dis->id))}}"> <button class="btn btn-success">Edit</button></a>
 
                             <a href="#deleteModal{{$dis->id}}" data-toggle="modal" class="btn btn-danger">Delete</a>
 
