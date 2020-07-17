@@ -1,7 +1,9 @@
  @extends('admin.layouts.app') 
  @section('content')
-            
-                <div class="card col-md-8">
+            <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+                <div class="card">
                   <div class="card-body">
                     <h2 class="card-title">Add District</h2>
                     <form action="{{route('admin.district.store')}}" method="post"  >
@@ -34,5 +36,9 @@
                   </div>
                 
                 </div>
+              </div>
+            </div>
+          </div>
+          
  @endsection               
               
