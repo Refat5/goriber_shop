@@ -2,6 +2,8 @@
 @section('content')
                     <h2 class="card-header" style="text-align: center;">{{ __('customLanguage.Brand List')}}</h2>
                      @include("admin.pages.message.validate ")
+                                          <a href="{{route('admin.brands.create')}}" style="margin-left: 80%;"> <button class="btn btn-success mt-2 mb-2 ">Add New</button></a>
+
                     
                     <table class="table table-bordered striped" id="dataTable">
                       <thead>

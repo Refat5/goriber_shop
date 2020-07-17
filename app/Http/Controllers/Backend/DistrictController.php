@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\District;
 use App\Division;
+use Crypt;
 
 class DistrictController extends Controller
 {
@@ -57,6 +58,7 @@ class DistrictController extends Controller
      public function edit($id)
      {
      	$divisions = Division::orderBY('d_priority','asc')->get();
+      $id=Crypt::decryptString($id);
      	$district = District::find($id);
      	if (!is_null($district)) 
      	{
