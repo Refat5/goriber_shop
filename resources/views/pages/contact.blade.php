@@ -72,7 +72,7 @@ input[type=submit]:hover {
 
 
 
-<div class="container-fluid">
+<div class=" p-0 container-fluid">
   <div style="text-align:center">
   	<div class="topFixedBannerContact">
                   <div class="topBannerOverlayContact">

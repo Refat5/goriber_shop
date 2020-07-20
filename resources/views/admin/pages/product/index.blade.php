@@ -1,10 +1,10 @@
 @extends('admin.layouts.app')
 @section('content')
-                <div class="card mt-3">
+               
                     
                   <h2 class="card-header" style="text-align: center;">Product List</h2>
                      @include("admin.pages.message.validate ")
-                                          <a href="{{route('admin.product.create')}}" style="margin-left: 80%;"> <button class="btn btn-success mt-2 mb-2 ">Add New</button></a>
+                                          <a href="{{route('admin.product.create')}}" style="margin-left: 80%; color: red;"> <button class="btn btn-success mt-2 mb-2 ">Add New</button></a>
 
                     
                     <table class="table table-bordered striped" id="dataTable">
@@ -82,7 +82,7 @@
                
 
 
-                  </div>
+           
 
  @endsection
 

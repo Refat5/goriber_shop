@@ -1,16 +1,15 @@
 @extends('layouts.app')
 @section('content')
 <!--  start sidebar -->
-<div class="container-fluid">
+<div class="p-0 container-fluid">
 
       <div class="topFixedBannerProduct">
                   <div class="topBannerOverlay">
                       <div class="topContent">
                           
-                              <h1 class="topTitleproduct text-center"> Products</h1>
+                              <h1 class="topTitleproduct text-center"> All Products</h1>
                            
                              
-                          
                       </div>
                   </div>
 
@@ -23,7 +22,7 @@
 		</div>
 		<div class="col-md-9">
 			<div class="widget mar-top-20">
-				<h3>All Product</h3>
+				<h3 class="forh3s">All Product</h3>
 
 		@include('pages.product.partials.allproduct')
 	</div>
@@ -35,5 +34,7 @@
 
 	</div>
 </div>
+@include('pages.product.partials.footerBtoom')
+
 @endsection
 <!-- end sidebar -->

@@ -49,16 +49,15 @@
 </div>
 
 
- <div class="container">
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-3">
 			@include('layouts.app-sidebar')
 			
 		</div>
 
-		<div class="col-md-8">
+		<div class="col-md-9">
 			<div class="widget mar-top-20">
-				<h3>Featured Product</h3>
+				<h3 class="forh3">Featured Product</h3>
 				<div class="row">
 
 				@include('pages.product.partials.allproduct')
@@ -75,7 +74,7 @@
 
 	</div>
 
-</div>
+
 <br><br>
   @include('pages.product.partials.footerBtoom')
 

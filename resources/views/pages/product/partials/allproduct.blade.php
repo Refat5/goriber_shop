@@ -23,7 +23,7 @@
 								</h4>
 								<p class="card-text">${{$pro->p_price}}</p>
 								@include('pages.product.partials.cart-button')
-								<button type="button" class="btn btn-info" id="wishbutton{{$pro->id}}" onclick="wishlist('{{$pro->id}}')"><i class="fa fa-plus"></i>Wishlist</button>
+								<button type="button" class="btn buttonw" id="wishbutton{{$pro->id}}" onclick="wishlist('{{$pro->id}}')"><i class="fa fa-plus"></i>Wishlist</button>
 							</div>
 						</div>
 					</div>	
