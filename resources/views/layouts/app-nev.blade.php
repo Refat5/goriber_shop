@@ -3,6 +3,13 @@
   .fdesign{font-size: 18px;
 font-weight: 400;
 font-family: initial;}
+.bord{
+  padding: 2px 8px 11px 5px;
+}
+.mar{
+  margin-left: 30px;
+
+}
 </style>
 
 <div class="warpper">
@@ -10,7 +17,7 @@ font-family: initial;}
 <!--  Navigation --> 
 
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
-		<div class="container">
+		
  <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button> -->
@@ -20,27 +27,27 @@ font-family: initial;}
    
   <div class="collapse navbar-collapse topTitle" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-       <li class="nav-item {{Route::is('index') ? 'active' : '' }}">
-        <i class="fa fa-home " style="margin-left: 30px;"></i>   <a class="nav-link fdesign" href="{{route('index')}}">Home </a>
+       <li class="nav-item bord {{Route::is('index') ? 'active' : '' }}">
+        <i class="fa fa-home mar" ></i>   <a class="nav-link fdesign" href="{{route('index')}}">Home </a>
       </li>
 
-        <li class="nav-item {{Route::is('about') ? 'active' : '' }}">
-        <i class="fa fa-address-card"style="margin-left: 30px;"></i><a class="nav-link fdesign" href="{{route('about')}}">About</a>
+        <li class="nav-item bord {{Route::is('about') ? 'active' : '' }}">
+        <i class="fa fa-address-card mar"></i><a class="nav-link fdesign" href="{{route('about')}}">About</a>
       </li>
 
-       <li class="nav-item {{Route::is('product') ? 'active' : '' }}">
-         <i class="fa fa-product-hunt"style="margin-left: 30px;"></i><a class="nav-link fdesign" href="{{route('product')}}">Product </a>
+       <li class="nav-item bord {{Route::is('product') ? 'active' : '' }}">
+         <i class="fa fa-product-hunt mar"></i><a class="nav-link fdesign" href="{{route('product')}}">Product </a>
       </li>
 
-        <li class="nav-item {{Route::is('wishlist') ? 'active' : '' }}">
-         <i class="fa fa-heart" style="margin-left: 30px;"></i><a class="nav-link" id="wishlist" href="{{route('wishlist')}}">Wish List</a>
+        <li class="nav-item bord {{Route::is('wishlist') ? 'active' : '' }}">
+         <i class="fa fa-heart mar" ></i><a class="nav-link fdesign" id="wishlist" href="{{route('wishlist')}}">Wish List</a>
       </li>
 
-       <li class="nav-item {{Route::is('contact') ? 'active' : '' }}">
-         <i class="fa  fa-phone"style="margin-left: 30px;"></i><a class="nav-link" href="{{route('contact')}}">Contact </a>
+       <li class="nav-item bord {{Route::is('contact') ? 'active' : '' }}">
+         <i class="fa fa-phone mar"></i><a class="nav-link fdesign" href="{{route('contact')}}">Contact </a>
       </li>
-    
-      
+
+    </ul>
 
       <li class="nav-item">
          <form class="form-inline my-2 my-lg-0" action="{{route('search')}}" method="get">
@@ -53,13 +60,13 @@ font-family: initial;}
       </div>
     </form>
       </li>
-    </ul>
+
      <ul class="navbar-nav ml-auto">
 
       <li>
-        <i class="fa fa-cart-plus" style="margin-left: 30px;" ></i>
+        <i class="fa fa-cart-plus mar"  ></i>
         <a  href="{{route('carts')}}">
-          <button class="badge badge-warning" style="height: 100%;width: 100%;">
+          <button class="badge badge-warning" style="height: 65%;width: 70%;">
             <span>Cart</span>
              <span class="badge badge-danger"  id="total_item">{{App\Cart::totalItem()}}</span>
             
@@ -107,6 +114,6 @@ font-family: initial;}
                     </ul>
    
   </div>
-  </div>
+  
 </nav>
 <!-- end Nev -->

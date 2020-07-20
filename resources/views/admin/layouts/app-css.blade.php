@@ -16,6 +16,8 @@
     <!-- //the css for Datatable -->
      <link rel="stylesheet" href="{{asset('css/dataTables.css')}}">
 
+     <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
+
     
     <!-- endinject -->
     <!-- plugin css for this page -->

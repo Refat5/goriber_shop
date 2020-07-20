@@ -1,10 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +49,8 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  
+  background-color: #FF7588;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -62,7 +60,7 @@ html {
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #00B5ED;
 }
 
 @media screen and (max-width: 650px) {
@@ -81,7 +79,7 @@ html {
   <p>Resize the browser window to see that this page is responsive by the way.</p>
 </div>
 
-<h2 style="text-align:center" class="mt-5 ">Our Team</h2>
+<h2 style="text-align:center" class="mt-5 forh3 ">Our Team</h2>
 <div class="row mt-5">
   <div class="column ">
     <div class="card">
@@ -110,7 +108,7 @@ html {
   </div>
   <div class="column">
     <div class="card ">
-      <img src="../images/profile3.jpg" class="img" alt="Mike" style="width:100%">
+      <img src="../images/profile.jpg" class="img" alt="Mike" style="width:100%">
       <div class="container">
         <h2>Komol Chandro</h2>
         <p class="title">Designer</p>
@@ -124,7 +122,9 @@ html {
 
 </div>
 
-</body>
-</html>
+
+</br>
+
+@include('pages.product.partials.footerBtoom')
 @endsection
 <!-- end sidebar -->

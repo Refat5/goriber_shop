@@ -32,6 +32,13 @@
               </a>
             </li>
 
+             <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.order.list')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">{{ __('customLanguage.Order List')}}</span>
+              </a>
+            </li>
+
              
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -53,23 +60,6 @@
             </li>
 
             
-
-              <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <i class="menu-icon typcn typcn-coffee"></i>
-                <span class="menu-title">{{ __('customLanguage.Order')}}</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.order.list')}}">{{ __('customLanguage.Order List')}}</a>
-                  </li>
-                 
-                </ul>
-              </div>
-            </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>

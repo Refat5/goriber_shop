@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container mt-2">
-	<h2>My Cart Item</h2>
+	<h2 class="hader1">My Cart Item</h2>
 	@if(App\Cart::totalItem() > 0)
 	<table class="table table-bordered table-stripe" id="dataTable">
 		<thead>
@@ -95,4 +95,5 @@
 	
 	
 </div>
+ @include('pages.product.partials.footerBtoom')
 @endsection

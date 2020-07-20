@@ -1,9 +1,11 @@
 @extends('admin.layouts.app')
 @section('content')
-                <div class="card mt-3">
+                
                     
                   <h2 class="card-header" style="text-align: center;">Order List</h2>
                      @include("admin.pages.message.validate ")
+                     <br>
+                     <br>
                     
                     <table class="table table-bordered striped" id="dataTable">
                       <thead>
@@ -99,7 +101,7 @@
                     </div>
 
 
-                  </div>
+                 
 
  @endsection
 

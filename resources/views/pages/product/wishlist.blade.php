@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container mt-2">
-	<h2>My wishlist Item</h2>
+	<h2 class="hader">My wishlist Item</h2>
 	@if(App\wishlist::totalItemw() > 0)
 	<table class="table table-bordered table-stripe" id="dataTable">
 		<thead>

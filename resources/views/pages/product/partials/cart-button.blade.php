@@ -5,5 +5,5 @@
 
 	
 </form> -->
-
-<button type="button" class="btn btn-warning" id="cart" onclick="addCart('{{$pro->id}}')"><i class="fa fa-plus"></i>Add To Cart</button>
+ 
+<button type="button" class="btn buttonc " id="cart" onclick="addCart('{{$pro->id}}')"><i class="fa fa-plus"></i>Cart Add</button>
