@@ -40,7 +40,7 @@
             </li>
 
              
-            <li class="nav-item">
+          <!--   <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">{{ __('customLanguage.Product')}}</span>
@@ -57,10 +57,24 @@
                  
                 </ul>
               </div>
+            </li> -->
+
+
+             <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.product.list')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">{{ __('customLanguage.Product List')}}</span>
+              </a>
             </li>
 
-            
-            <li class="nav-item">
+             <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.category.list')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">{{ __('customLanguage.Category List')}}</span>
+              </a>
+            </li>
+
+         <!--    <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">{{ __('customLanguage.Categoris')}}</span>
@@ -77,8 +91,15 @@
                  
                 </ul>
               </div>
-            </li>
+            </li> -->
+
              <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.brands.list')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">{{ __('customLanguage.Brands')}}</span>
+              </a>
+            </li>
+         <!--     <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">{{ __('customLanguage.Brands')}}</span>
@@ -95,8 +116,14 @@
                  
                 </ul>
               </div>
+            </li> -->
+              <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.division.list')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">{{ __('customLanguage.Division')}}</span>
+              </a>
             </li>
-
+<!-- 
               <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
@@ -114,8 +141,16 @@
                  
                 </ul>
               </div>
+            </li> -->
+
+              <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.district.list')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">{{ __('customLanguage.District')}}</span>
+              </a>
             </li>
 
+<!-- 
               <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
@@ -133,7 +168,7 @@
                  
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <!-- partial -->

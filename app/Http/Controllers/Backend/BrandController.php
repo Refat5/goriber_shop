@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Brand;
 use Image;
 use File;
-
+use JsValidator;
 class BrandController extends Controller
 {
 
@@ -17,19 +17,25 @@ class BrandController extends Controller
   
     public function create()
     {
+      $validator=JsValidator::make([
+        'name'  => 'required',
+        'image' => 'nullable|image',
+         ]);
     	
-    	return view('admin.pages.brands.create');
+    	return view('admin.pages.brands.create',compact('validator'));
 
     }
 
 
      public function store(Request $request)
      {
-        $request->validate
+      $val= $request->validate
         ([
-      	'name'  => 'required',
-      	'image' => 'nullable|image',
+        'name'  => 'required',
+        'image' => 'nullable|image',
          ]);
+      $jsValidator = JsValidator::validator($val);
+       
 
       $brand = new Brand();
       $brand->b_name = $request->name;

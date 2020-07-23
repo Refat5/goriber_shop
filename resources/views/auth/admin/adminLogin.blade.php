@@ -1,86 +1,97 @@
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE HTML>
+<html lang="zxx">
+
 <head>
-	<title>Admin Login</title>
+    <title>Login Gorib er shope</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Effective Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"
+    />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Meta tag Keywords -->
+    <!-- css files -->
+    <link rel="stylesheet" href="{{asset('css/adminLog.css')}}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- //web-fonts -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
-@include('layouts.app-css')
-<link rel="stylesheet" type="text/css" href="{{asset('css/admin.css')}}">
-
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6 mt-5" >
-            <div class="card mt-5">
-            	   @include("admin.pages.message.validate ")
-                <div class="card-header">{{ __('Admin Login') }}</div>
-
-                <div class="card-body">
-                    <form method="post" action="{{ route('admin.sabmit.login') }}">
+    <div class="video-w3l" data-vide-bg="video/1">
+        <!--header-->
+        <div class="header-w3l">
+            <h1>
+                <span>A</span>dmin
+                <span>L</span>ogin
+                <span>F</span>orm
+            </h1>
+        </div>
+        <!--//header-->
+        <div class="main-content-agile">
+            <div class="sub-main-w3">
+                @include("admin.pages.message.validate ")
+                <h2>Login Here
+                    <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+                </h2>
+                <form method="post" action="{{ route('admin.sabmit.login') }}">
                         @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                    <div class="pom-agile">
+                        <span class="fa fa-user-o" aria-hidden="true"></span>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    </div>
+                    <div class="pom-agile">
+                        <span class="fa fa-key" aria-hidden="true"></span>
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    </div>
+                    <div class="sub-w3l">
+                        <div class="sub-agile">
+                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}> 
+                            <label for="brand1">
+                                <span></span>Remember me</label>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
+                       @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('admin.password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="right-w3l">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
             </div>
         </div>
+        <!--//main-->
+        <!--footer-->
+        <div class="footer">
+            <p>&copy; 2020 Gorib Login Form. All rights reserved
+               
+            </p>
+        </div>
+        <!--//footer-->
     </div>
-</div>
 
-
+    <!-- js -->
+    <script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
+    <script src="{{asset('js/jquery.vide.min.js')}}"></script>
+    <!-- //js -->
 
 </body>
-@include('layouts.app-js')
+
 </html>

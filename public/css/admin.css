@@ -2,18 +2,49 @@
 
 body
 {
-	background: #21283c;
+	background: white;
+	color: black;
 	
 }
 
 .card
 {
-	max-width: 550px;
-	background: #113;
+	max-width: 500px;
+	background: #FFFFFF;
 
-  color: white;
+
+  color: black;
 }
-.body
+.card-heade
 {
-	background: #8c8888;
+	
+	
+	    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #394444;
+}
+.btn-primary{
+	color:white;
+	background:#47d4bb;
+	border-color: #47d4bb !important;
+}
+.adminContent {
+    background-image: url(/images/admin-log.jpg);
+    min-height: 565px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.adminContentOverlay {
+    position: absolute;
+    min-height: 565px;
+    width: 100%;
+  
+}
+.card{
+	margin-left: 450px;
+	margin-top: 100px;
 }
