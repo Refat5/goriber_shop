@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Login</title>
+    <title>Resat</title>
 </head>
 <body>
 @include('layouts.app-css')
 <link rel="stylesheet" type="text/css" href="{{asset('css/admin.css')}}">
 
 
-<div class="container mt-5">
+<div class="container ">
     <div class="row justify-content-center">
-        <div class="col-md-6 mt-4">
-            <div class="card mt-4">
+        <div class="">
+            <div class="">
                 <div class="card-header">{{ __(' Admin Reset Password') }}</div>
 
                 <div class="card-body">

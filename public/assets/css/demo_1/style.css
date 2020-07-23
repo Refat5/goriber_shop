@@ -403,8 +403,8 @@
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 63px);
-  background: -webkit-gradient(linear, left bottom, left top, from(#27bfa3), to(#47d4bb));
-  background: linear-gradient(to top, #27bfa3, #27bfa3);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#47d4bb));
+  background: linear-gradient(to top, #ffffff, #ffffff);
   font-family: "roboto", sans-serif;
   padding: 0;
   width: 270px;
@@ -420,6 +420,7 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+
     flex-direction: column; }
     .sidebar > .nav .nav-item .collapse {
       z-index: 999; }
@@ -449,7 +450,7 @@
           display: block;
           height: 100%;
           width: 2px;
-          background: #1026de; }
+          background: #47d4bb; }
         .sidebar > .nav .nav-item:not(.hover-open) .collapse .sub-menu .nav-item .nav-link:hover,
         .sidebar > .nav .nav-item:not(.hover-open) .collapsing .sub-menu .nav-item .nav-link:hover {
           color: #fff; }
@@ -502,7 +503,7 @@
         font-size: 18px;
         color: #fff; }
       .sidebar > .nav .nav-item .nav-link .menu-title {
-        color: inherit;
+        color: ;
         display: inline-block;
         font-size: 15px;
         line-height: 1;

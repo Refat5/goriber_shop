@@ -26,6 +26,10 @@
 
           } );
       </script>
+       <script type="text/javascript" src="{{ asset('vendor/jsvalidation/js/jsvalidation.js')}}"></script>
+ 
+
+      @yield('script')
 
   </body>
 </html>

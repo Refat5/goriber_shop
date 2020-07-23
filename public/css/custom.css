@@ -246,7 +246,7 @@ for slider*/
 .hader
 {
 
-    color: #FFF!important;;
+    color: #FFF!important;
     background-color: #FF7588!important;
     padding: 10px;
     text-align: center;
@@ -288,8 +288,8 @@ for slider*/
 h3
 {
     font-weight: 700;
-    color: white;
-    background: #207286;
+    color: #FFFFFF;
+    background: #42d6bc;
     text-align: center;
     padding: 8px;
     font-family: monospace;
@@ -332,11 +332,30 @@ a
 }
 .buttonw:hover {
   background-color: #3da536;
+  color :#ffffff !important;
+}
+
+.sidebar > .nav .nav-item .nav-link .menu-title:hover {
+    color:  !important;
 }
 h2
 {
-    color: white !important;
-    background: #27bfa3 !important;
+   color: #6c7b79 !important;
+    
+    font-size: large !important;
+
+    padding: 15px !important;
+    text-align: center !important;
+    font-family: inherit !important;
+    font-weight: 700 !important;
+    font-size: x-large !important;
+}
+.card-hader
+{
+   color: #000000;
+    background: #26ffd8 !important;
+    font-size: large !important;
+
     padding: 15px;
     text-align: center;
     font-family: inherit;
@@ -360,9 +379,51 @@ h2
    background: radial-gradient(#dc42cffa, #25bfa000);
 }*/
 .nav-item:hover{
-     background: radial-gradient(#dc42cffa, #25bfa000);
+        
+         background: radial-gradient(#0fecef, #e7f1ef);
 }
 .footer{
      color: wheat;
-    background: #42bfa3 !important;
+    background: #47d4bb !important;
     }    
+.sidebar > .nav .nav-item .nav-link .menu-title
+{
+    color:  black;
+}
+.sidebar > .nav .nav-item.nav-category{
+        color: #211313 !important;
+}
+
+.sidebar > .nav .nav-item.nav-profile .nav-link .profile-name {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #231b1b !important;
+}
+/*.sidebar > .nav .nav-item 
+{
+    color: #ffffff !important;
+}*/
+.sidebar > .nav:not(.sub-menu) > .nav-item > .nav-link
+{
+    background:#FFFFFF !important ;
+
+}
+.sidebar > .nav:not(.sub-menu) > .nav-item > .nav-link:hover
+{
+    background:#47d4bb !important ;
+    color :#ffffff !important;
+
+    
+}
+
+.sidebar > .nav > .nav-item:not(.nav-profile) > .nav-link:before{
+        border: 2px solid #47d4bb !important;
+}
+
+
+
+.card-header{
+    background: #ffffff !important;
+    padding: 30px !important;
+}
