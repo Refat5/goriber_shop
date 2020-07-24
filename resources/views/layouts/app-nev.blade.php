@@ -27,29 +27,29 @@ font-family: initial;}
    
   <div class="collapse navbar-collapse topTitle" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-       <li class="nav-item bord {{Route::is('index') ? 'active' : '' }}">
+       <li class=" {{Route::is('index') ? 'active' : '' }}">
         <i class="fa fa-home mar" ></i>   <a class="nav-link fdesign" href="{{route('index')}}">Home </a>
       </li>
 
-        <li class="nav-item bord {{Route::is('about') ? 'active' : '' }}">
+        <li class=" {{Route::is('about') ? 'active' : '' }}">
         <i class="fa fa-address-card mar"></i><a class="nav-link fdesign" href="{{route('about')}}">About</a>
       </li>
 
-       <li class="nav-item bord {{Route::is('product') ? 'active' : '' }}">
+       <li class=" {{Route::is('product') ? 'active' : '' }}">
          <i class="fa fa-product-hunt mar"></i><a class="nav-link fdesign" href="{{route('product')}}">Product </a>
       </li>
 
-        <li class="nav-item bord {{Route::is('wishlist') ? 'active' : '' }}">
+        <li class=" {{Route::is('wishlist') ? 'active' : '' }}">
          <i class="fa fa-heart mar" ></i><a class="nav-link fdesign" id="wishlist" href="{{route('wishlist')}}">Wish List</a>
       </li>
 
-       <li class="nav-item bord {{Route::is('contact') ? 'active' : '' }}">
+       <li class=" {{Route::is('contact') ? 'active' : '' }}">
          <i class="fa fa-phone mar"></i><a class="nav-link fdesign" href="{{route('contact')}}">Contact </a>
       </li>
 
     </ul>
 
-      <li class="nav-item">
+      <li class="">
          <form class="form-inline my-2 my-lg-0" action="{{route('search')}}" method="get">
 
           <div class="input-group mb-3">
@@ -76,16 +76,16 @@ font-family: initial;}
       </li>
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item {{Route::is('login') ? 'active' : '' }}  ">
+                            <li class="{{ Route::is('login') ? 'active' : '' }}  ">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item {{Route::is('register') ? 'active' : '' }} ">
+                                <li class=" {{Route::is('register') ? 'active' : '' }} ">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li class=" dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                   <img class="img rounded-circle" src="{{App\Helpers\Image_helper::getUserImage( Auth::user()->id)}}" style="height: 28px;">
                                    

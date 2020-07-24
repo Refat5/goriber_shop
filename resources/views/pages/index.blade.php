@@ -22,7 +22,7 @@
             <img class="slider" src="{{asset('images/sliders/'.$slider->image)}}" alt="{{$slider->title}}" style="height: 600px;width: 1400px;" >
 
             <div class="carousel-caption d-none d-md-block slider-text">
-               <h2 class="h2">What's Up Gorib er Bacchara..?</h2>
+               <h2 class="h2">I may be poor but not a beggar <span style="color: yellow;">😇😇</span></h2>
 
               <h5 class="h5">{{ $slider->title}}</h5>
 

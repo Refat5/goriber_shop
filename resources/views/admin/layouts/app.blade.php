@@ -8,3 +8,4 @@
 
  @yield('content')
 @include('admin.layouts.app-footer')
+

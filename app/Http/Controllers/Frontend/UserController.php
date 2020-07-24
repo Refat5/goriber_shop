@@ -52,7 +52,8 @@ class UserController extends Controller
           
             $user->first_name = $request->first_name;
              $user->last_name = $request->last_name;
-             $user->user_name = $request->user_name; 
+             $user->user_name = $request->user_name;
+             $user->gender = $request->gender; 
              $user->division_id = $request->division_id;
              $user->district_id = $request->district_id;
              $user->mobile_no = $request->mobile_no;

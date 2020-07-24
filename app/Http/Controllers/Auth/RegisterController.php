@@ -95,6 +95,7 @@ class RegisterController extends Controller
         $user= User::create([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
+            'gender'=> $request->gender,
             'user_name' => Str::slug( $request->first_name.$request->last_name), 
             'division_id' => $request->division_id,
             'district_id' => $request->district_id,

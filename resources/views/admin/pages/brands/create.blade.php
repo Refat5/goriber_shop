@@ -5,7 +5,7 @@
                 <div class="card col-md-8">
                   <div class="card-body">
                     <h2 class="card-title">Add Brand</h2>
-                    <form action="{{route('admin.brands.store')}}" method="post" enctype="multipart/form-data" >
+                    <form action="{{route('admin.brands.store')}}" method="post" enctype="multipart/form-data" id="brand" >
                       @csrf
                       @include("admin.pages.message.validate ")
                    
@@ -33,6 +33,12 @@
                 </div>
               </div>
             </div>
+
             
- @endsection               
+ @endsection 
+
+
+ @section('script')     
+{!! $validator->selector('#brand') !!}
+ @endsection       
               

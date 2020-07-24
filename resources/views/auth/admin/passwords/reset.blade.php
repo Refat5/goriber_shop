@@ -1,10 +1,8 @@
 
-
-</div>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Rest Password</title>
+    <title>Reset Password</title>
 </head>
 <body>
 @include('layouts.app-css')
@@ -12,8 +10,8 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6 mt-5" >
-            <div class="card mt-5">
+        <div class="" >
+            <div class="">
                 <div class="card-header">{{ __(' Admin Reset Password') }}</div>
 
                 <div class="card-body">

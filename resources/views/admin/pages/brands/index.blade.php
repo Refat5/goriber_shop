@@ -48,7 +48,7 @@
                                   <div class="modal-body">
                                       <form action="{!!route('admin.brands.delete',$brand->id)!!}" method="post">
                                           {{csrf_field()}}
-                                          <button type="subnit" class="btn btn-danger">{{ __('customLanguage.Permanent Delete')}}</button>
+                                          <button type="submit" class="btn btn-danger">{{ __('customLanguage.Permanent Delete')}}</button>
                                       
                                       </form>
                                   
