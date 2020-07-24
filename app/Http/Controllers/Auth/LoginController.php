@@ -61,7 +61,7 @@ class LoginController extends Controller
             {
 
                   session()->flash('error','Invalide Login!!');
-                   return redirect('/')->route('login');
+                   return redirect('')->route('login');
 
             }
          }

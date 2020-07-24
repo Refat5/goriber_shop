@@ -9,12 +9,8 @@
                     <form action="{{route('admin.district.store')}}" method="post"  >
                       @csrf
                       @include("admin.pages.message.validate ")
-                   
-                    <div class="form-group">
-                      <label>District Name</label>
-                      <input type="text" class="form-control form-control-lg" placeholder="Enter District Name" aria-label="Username" name="name">
-                    </div>
-                    <div class="form-group">
+
+                       <div class="form-group">
 
                     <label>Select A Division For this District</label>
                       <select class="form-control" name="division_id">
@@ -27,6 +23,12 @@
                          @endforeach 
                       </select>
                     </div>
+                   
+                    <div class="form-group">
+                      <label>District Name</label>
+                      <input type="text" class="form-control form-control-lg" placeholder="Enter District Name" aria-label="Username" name="name">
+                    </div>
+                   
 
      
                      
