@@ -59,21 +59,21 @@ ul, ol {
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
 
-              <div class="pr-xl-4 mt-2"><a class="brand" href="index.html"><img src="{{asset('images/logo.png')}}" height="80px;" width="330"></a>
+              <div class="pr-xl-4 mt-2"><a class="brand" href="index.html"><img src="{{asset('images/logo.png')}}" height="80%;" width="60%"></a>
                 
                 <!-- Rights-->
-                <p class="rights mt-4"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                <p class="rights mt-4"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>gOrib</span><span>. </span><span>All Rights Reserved.</span></p>
               </div>
             </div>
             <div class="col-md-4">
               <h5>Contacts</h5>
               <dl class="contact-list">
                 <dt>Address:</dt>
-                <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                <dd>3900 Feni , Mohifal, Lokkhiyara</dd>
               </dl>
               <dl class="contact-list">
                 <dt>email:</dt>
-                <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                <dd><a href="mailto:#">abrefat2190@gmail.com</a></dd>
               </dl>
               <dl class="contact-list">
                 <dt>phones:</dt>

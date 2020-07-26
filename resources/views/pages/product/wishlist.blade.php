@@ -61,12 +61,13 @@
 			@endforeach
 			
 		</tbody>
-	</table>
-	<div class="float-right">
+		<div class="float-right">
 		<a href="{{route('product')}}" class="btn btn-info btn-lg"> Continue Shopping..</a>
 		
 
 	</div>
+	</table>
+	
 	@else
 	<div >
 		<strong class="alert alert-warning">There is no wishlist Item </strong>

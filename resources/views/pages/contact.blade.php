@@ -93,19 +93,22 @@ input[type=submit]:hover {
     <div class="column">
     	<div class="card mt-5">
     	<h2>Our Facebook Page</h2>
-    	<a href="https://www.messenger.com/t/r3dr0k37" class="btn btn-success">Click</a>
+
+      <div class="text-center"><a href="https://www.messenger.com/t/r3dr0k37"><img src="{{asset('images/fac.png')}}" height="75%;" width="20%"></a></div>
+    	
     	<br>
-    	<h6>Mobile Number:<b>++01305976639</b></h6>
+    	<h6 class=" text-center font-weight-bold">Mobile Number:<b>++01305976639</b></h6>
     	</div>
     	<br>
     	<br>
 
     	<h2>Messenger Inbox</h2>
-    	<a href="https://www.messenger.com/t/r3dr0k37" class="btn btn-success">Click</a>
+    	      <div class="text-center"><a href="https://www.messenger.com/t/r3dr0k37"><img src="{{asset('images/mess.png')}}" height="70%;" width="20%"></a></div>
+
     	<br>
       <br><br><br>
       <h2>Gmail</h2>
-      <p>mdrefat382139@gmail.com</p>
+      <p class="text-center font-weight-bold">mdrefat382139@gmail.com</p>
 
       
     </div>
