@@ -2,10 +2,13 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+            <div class="card  mt-2">
+                                <div  style="text-align: center;"><br>
+                         <h4>LOG IN</h4>
+                    <br>
+                    <img  src="{{asset('images/logo.png')}}" height="50px;" width="210"></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

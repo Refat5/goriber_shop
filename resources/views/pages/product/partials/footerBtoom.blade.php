@@ -54,12 +54,12 @@ ul, ol {
 
 
 
-<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
-        <div class="container">
+<footer class="section footer-classic context-dark bg-image" style="background: #1e282b;">
+        <div class="container mt-3">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
 
-              <div class="pr-xl-4 mt-2"><a class="brand" href="index.html"><img src="{{asset('images/logo2.png')}}" height="120px;" width="200"></a>
+              <div class="pr-xl-4 mt-2"><a class="brand" href="index.html"><img src="{{asset('images/logo.png')}}" height="80px;" width="330"></a>
                 
                 <!-- Rights-->
                 <p class="rights mt-4"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>

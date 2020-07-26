@@ -1,16 +1,4 @@
 
-<style type="text/css">
-  .fdesign{font-size: 18px;
-font-weight: 400;
-font-family: initial;}
-.bord{
-  padding: 2px 8px 11px 5px;
-}
-.mar{
-  margin-left: 30px;
-
-}
-</style>
 
 <div class="warpper">
 	
@@ -22,34 +10,34 @@ font-family: initial;}
     <span class="navbar-toggler-icon"></span>
   </button> -->
   <a class="navbar-brand" href="{{route('index')}}">
-    <img src="{{asset('images/logo2.png')}}" height="80px;" width="200">
+    <img src="{{asset('images/logo2.png')}}" height="50px;" width="210">
   </a>
    
   <div class="collapse navbar-collapse topTitle" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
        <li class=" {{Route::is('index') ? 'active' : '' }}">
-        <i class="fa fa-home mar" ></i>   <a class="nav-link fdesign" href="{{route('index')}}">Home </a>
+        <a class="nav-link fdesign" href="{{route('index')}}"><i class="fa fa-home" ></i> Home </a>
       </li>
 
         <li class=" {{Route::is('about') ? 'active' : '' }}">
-        <i class="fa fa-address-card mar"></i><a class="nav-link fdesign" href="{{route('about')}}">About</a>
+        <a class="nav-link fdesign" href="{{route('about')}}"><i class="fa fa-address-card"></i> About</a>
       </li>
 
        <li class=" {{Route::is('product') ? 'active' : '' }}">
-         <i class="fa fa-product-hunt mar"></i><a class="nav-link fdesign" href="{{route('product')}}">Product </a>
+         <a class="nav-link fdesign" href="{{route('product')}}"> <i class="fa fa-product-hunt"></i> Product </a>
       </li>
 
         <li class=" {{Route::is('wishlist') ? 'active' : '' }}">
-         <i class="fa fa-heart mar" ></i><a class="nav-link fdesign" id="wishlist" href="{{route('wishlist')}}">Wish List</a>
+         <a class="nav-link fdesign" id="wishlist" href="{{route('wishlist')}}"> <i class="fa fa-heart " ></i> Wish List</a>
       </li>
 
        <li class=" {{Route::is('contact') ? 'active' : '' }}">
-         <i class="fa fa-phone mar"></i><a class="nav-link fdesign" href="{{route('contact')}}">Contact </a>
+         <a class="nav-link fdesign" href="{{route('contact')}}"><i class="fa fa-phone "></i> Contact </a>
       </li>
 
     </ul>
 
-      <li class="">
+     
          <form class="form-inline my-2 my-lg-0" action="{{route('search')}}" method="get">
 
           <div class="input-group mb-3">
@@ -59,15 +47,16 @@ font-family: initial;}
       </div>
       </div>
     </form>
-      </li>
+     
 
      <ul class="navbar-nav ml-auto">
 
       <li>
-        <i class="fa fa-cart-plus mar"  ></i>
-        <a  href="{{route('carts')}}">
-          <button class="badge badge-warning" style="height: 65%;width: 70%;">
-            <span>Cart</span>
+        
+        <a  href="{{route('carts')}}"> <i class="fa fa-cart-plus " style="color: #ff0018;
+margin-left: -10%;
+text-decoration: none;
+font-size: larger;"  ></i>
              <span class="badge badge-danger"  id="total_item">{{App\Cart::totalItem()}}</span>
             
           </button>
@@ -77,11 +66,11 @@ font-family: initial;}
                         <!-- Authentication Links -->
                         @guest
                             <li class="{{ Route::is('login') ? 'active' : '' }}  ">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="lg nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class=" {{Route::is('register') ? 'active' : '' }} ">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="lg nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
