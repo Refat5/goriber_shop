@@ -19,22 +19,24 @@
                                 <div class="modal-body">
                               <form action="{{route('admin.division.store')}}" method="post" >
                       @csrf
-                      @include("admin.pages.message.validate ")
+                      
                    
                     <div class="form-group">
                       <label>Divison Name</label>
-                      <input type="text" class="form-control form-control-lg" placeholder="Enter Divison Name" aria-label="Username" name="name">
+                      <input type="text" class="form-control form-control-lg" placeholder="Enter Divison Name" aria-label="Username" name="name" required autocomplete="name" autofocus>
                     </div>
 
                      <div class="form-group">
                       <label>Priority</label>
-                      <input type="text" class="form-control form-control-lg" placeholder="Enter priority " aria-label="Username" name="priority">
+                      <input type="text" class="form-control form-control-lg" placeholder="Enter priority " aria-label="Username" name="priority"  required autocomplete="priority" autofocus>
                     </div>
                   
 
-                    
-                     
-                    <button type="submit" class="btn btn-info"> Save</button>
+                    <div class="modal-footer">
+                                      <button type="submit" class="btn btn-info">Save</button>
+                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                     
+                                    </div>
 
                     </form>
                                 </div>
@@ -87,12 +89,12 @@
                    
                     <div class="form-group">
                       <label class="col-md-4">Divison Name</label>
-                      <input type="text" class="form-control col-md-6" aria-label="Username" name="name" value="{{$division->d_name}}">
+                      <input type="text" class="form-control col-md-6" aria-label="Username" name="name" value="{{$division->d_name}}" required autocomplete="name" autofocus>
                     </div>
 
                      <div class="form-group">
                       <label class="col-md-4">Priority</label>
-                      <input type="text" class="form-control col-md-6 " aria-label="Username" name="priority" value="{{$division->d_priority}}">
+                      <input type="text" class="form-control col-md-6 " aria-label="Username" name="priority" value="{{$division->d_priority}}" required autocomplete="priority" autofocus>
                     </div>
                   
 
