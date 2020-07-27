@@ -27,11 +27,11 @@
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                  <input id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror"placeholder="First Name *"  name="first_name" value="{{ old('first_name') }}"autofocus>
+                                  <input id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror"placeholder="First Name *"  name="first_name" value="{{ old('first_name') }}"autofocus required>
 
                                         </div>
                                         <div class="form-group">
-                                             <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" placeholder="Last Name *" name="last_name" value="{{ old('last_name') }}"autofocus>
+                                             <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" placeholder="Last Name *" name="last_name" value="{{ old('last_name') }}"autofocus required>
                                         </div>
 
                                         <div class="form-group">
@@ -61,14 +61,14 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                              <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Your Email *" >
+                                              <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Your Email *" required >
                                             
                                         </div>
                                         <div class="form-group">
-                                            <input id="mobile_no" type="text" class="form-control @error('mobile_no') is-invalid @enderror" name="mobile_no" value="{{ old('mobile_no') }}"autofocus placeholder="Phone No">
+                                            <input id="mobile_no" type="text" class="form-control @error('mobile_no') is-invalid @enderror" name="mobile_no" value="{{ old('mobile_no') }}"autofocus placeholder="Phone No" required>
                                         </div>
                                         <div class="form-group">
-                               <select class="form-control" name="division_id" id="division_id">
+                               <select class="form-control" name="division_id" id="division_id" required>
                                 <option value=""> Please select a Division</option>
                                 @foreach ($divisions as $division)
                                 <option value="{{$division->id}}">{{$division->d_name}}</option>
