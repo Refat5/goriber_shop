@@ -201,15 +201,17 @@ Route::post('/delete/{id}','Backend\DistrictController@delete')->name('admin.dis
 
 Route::group(['prefix' => 'division'],function(){
 
-Route::get('/create','Backend\DivisionController@create')->name('admin.division.create');
+
 Route::post('/store','Backend\DivisionController@store')->name('admin.division.store');
 Route::get('/list','Backend\DivisionController@list')->name('admin.division.list');
-Route::get('/edit/{id}','Backend\DivisionController@edit')->name('admin.division.edit');
 Route::post('/edit/{id}','Backend\DivisionController@update')->name('admin.division.update');
 Route::post('/delete/{id}','Backend\DivisionController@delete')->name('admin.division.delete');
 
 
 }); 
+
+
+
 
 
 

@@ -52,7 +52,7 @@
                          <div class="form-group row">
                       <label class="col-md-4 col-form-label text-md-right">Image</label>
                        <div class="col-md-6">
-                      <input type="file" class="form-control "aria-label="Username"name="image" id="image"  >
+                      <input type="file" class="form-control "aria-label="Username"name="image" id="image" value="{{ old('image') }}" required autocomplete="image" autofocus  >
                     </div>
                     </div>
 
@@ -148,7 +148,7 @@
                             <label for="title" class="col-md-4 col-form-label text-md-right" >{{ __('Slider title') }}</label>
 
                             <div class="col-md-6">
-                                <input id="title" type="text" class="form-control"  value="{{$slider->title}}" name="title" >
+                                <input id="title" type="text" class="form-control"  value="{{$slider->title}}" name="title"value="{{ old('title') }}" required autocomplete="title" autofocus  >
 
                              
                             </div>
@@ -157,7 +157,7 @@
                             <label for="Priorety" class="col-md-4 col-form-label text-md-right">{{ __('Priorety') }}</label>
 
                             <div class="col-md-6">
-                                <input id="Priorety" type="number" class="form-control @error('Priorety') is-invalid @enderror" name="priorety"  value="{{$slider->priorety}}"  >
+                                <input id="Priorety" type="number" class="form-control @error('Priorety') is-invalid @enderror" name="priorety"  value="{{$slider->priorety}}" value="{{ old('priorety') }}" required autocomplete="priorety" autofocus  >
 
                                
                             </div>
@@ -173,7 +173,7 @@
                       <label  class="col-md-4 col-form-label text-md-right">New Image(Optional)
                       </label>
                       <div class="col-md-6">
-                        <input type="file" class="form-control"name="image" id="image">
+                        <input type="file" class="form-control"name="image" id="image" >
                         
                       </div>
 
@@ -211,15 +211,17 @@
                                 @enderror
                             </div>
                         </div>
-                                      <button type="submit" class="btn btn-info">update</button>
-                                      </form>
-                                  
+                                                                        
                                   </div>
                                   <div class="modal-footer">
                                     
+                              <button type="submit" class="btn btn-info">update</button>
 
                                     
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+                                     </form>
+
                                   </div>
                                 </div>
                               </div>

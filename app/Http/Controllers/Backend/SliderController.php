@@ -80,7 +80,7 @@ class SliderController extends Controller
          ],
          [
          	'title.required' =>'please write a provied Titel',
-         ]
+         ] 
      );
 
       $slider = Slider::find($id);
