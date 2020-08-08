@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('first_name');
             $table->string('last_name')->nullable();
             $table->string('user_name')->unique();
-            $table->integer('gender')->comment('1=male, 2=female');
+            $table->integer('gender')->comment('1=male, 2=female')->nullable();
 
             $table->string('mobile_no')->unique();
             $table->string('email')->unique();

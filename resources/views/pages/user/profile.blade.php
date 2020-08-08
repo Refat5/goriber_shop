@@ -7,9 +7,16 @@
 
                 <div class="card card-body">
 
-                    <form method="POST" action="{{ route('user.profile.update') }}">
+                    <form method="POST" action="{{ route('user.profile.update') }}" enctype="multipart/form-data">
                         @csrf
                         @include('pages.msg.msg')
+                        <div class="form-group row">
+                            <label class="col-form-label text-md-right col-md-4"> select file</label>
+                            <div class="col-md-6">
+                                <input type="file" name="image"></div>
+
+                            
+                        </div>
 
                         <div class="form-group row">
                             <label for="first_name" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>

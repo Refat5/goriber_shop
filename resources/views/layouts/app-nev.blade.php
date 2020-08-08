@@ -75,8 +75,8 @@ font-size: larger;"  ></i>
                             @endif
                         @else
                             <li class=" dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                  <img class="img rounded-circle" src="{{App\Helpers\Image_helper::getUserImage( Auth::user()->id)}}" style="height: 28px;">
+                                <a id="navbarDropdown" class="lg nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                 <img alt="image" height="30" src="{{Auth::user()->avater ? '/images/user/'.Auth::user()->avater : '/profile.png'}}" class="rounded-circle profile-widget-picture">
                                    
                                     {{ Auth::user()->first_name }} {{ Auth::user()->last_name }} <span class="caret"></span>
                                 </a>

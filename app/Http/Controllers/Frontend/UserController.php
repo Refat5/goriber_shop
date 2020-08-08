@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Hash;
 use Auth;
 use App\Division;
 use App\District;
+use File;
+use Image;
 
 class UserController extends Controller
 {
@@ -53,7 +55,7 @@ class UserController extends Controller
             $user->first_name = $request->first_name;
              $user->last_name = $request->last_name;
              $user->user_name = $request->user_name;
-             $user->gender = $request->gender; 
+             
              $user->division_id = $request->division_id;
              $user->district_id = $request->district_id;
              $user->mobile_no = $request->mobile_no;
@@ -65,6 +67,21 @@ class UserController extends Controller
              {
              	$user->password = Hash::make($request->password);
              }
+
+     if (($request->image)) 
+      {
+        //Delete the old image form folder
+        if (File::exists('images/user/'.$user->image)) 
+        {
+            File::delete('images/user/'.$user->image);
+        }
+        $image = $request->file('image');
+        $img = time() . '.'. $image->getClientOriginalExtension();
+        $location = public_path('images/user/'.$img);
+        Image::make($image)->save($location);
+        $user->avater = $img;
+
+      }
              $user->save();
              return back();
              session()->flash('success','Your Profile Updated Successfully!');

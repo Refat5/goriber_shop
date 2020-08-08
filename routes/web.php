@@ -94,6 +94,12 @@ Route::get('/log','Auth\admin\LoginController@showLoginForm')->name('admin.login
 Route::post('/log/sabmit','Auth\admin\LoginController@log')->name('admin.sabmit.login');
 Route::post('/logout/sabmit','Auth\admin\LoginController@logout')->name('admin.logout');
 
+//admin profile
+
+Route::get('/dashboard','Backend\AdminController@adashboard')->name('admin.dashboard');
+Route::get('/profile','Backend\AdminController@aprofile')->name('admin.profile');
+Route::post('/profile/update','Backend\AdminController@aprofileUpdate')->name('admin.profile.update');
+
 //password email send Route
 Route::get('/password/reset','Auth\admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 Route::post('/password/email','Auth\admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
