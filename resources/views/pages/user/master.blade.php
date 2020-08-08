@@ -5,7 +5,7 @@
 		<div class="col-md-4">
 			<div class="list-group">
 				<a href="" class="list-group-item">
-				 <img class="img rounded-circle" src="{{App\Helpers\Image_helper::getUserImage( Auth::user()->id)}}" style="height: 120px;">
+				 <img alt="image" height="120" src="{{Auth::user()->avater ? '/images/user/'.Auth::user()->avater : '/profile.png'}}" class="rounded-circle profile-widget-picture">
 					
 				</a>
 				<a href="" class="list-group-item {{Route::is('user.dashboard') ? 'active' : ''}}">Dashboard</a>

@@ -53,22 +53,7 @@ class DivisionController extends Controller
     	return view('admin.pages.division.index',compact('divisions'));
 
     }
-     public function edit($id)
-     {
-     	
-     	$division = Division::find($id);
-     	if (!is_null($division)) 
-     	{
-     	  return view('admin.pages.division.edit',compact('division'));	
-     	}
-     	else
-     	{
-     		return redirect()->route('admin.division.list');
-     	}
-     	
-
-    	
-     }
+   
       public function update(Request $request,$id)
     {
     	   $request->validate

@@ -123,25 +123,7 @@
                 <span class="menu-title">{{ __('customLanguage.Division')}}</span>
               </a>
             </li>
-<!-- 
-              <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <i class="menu-icon typcn typcn-coffee"></i>
-                <span class="menu-title">{{ __('customLanguage.Division')}}</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.division.create')}}">{{ __('customLanguage.Add Division')}}</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.division.list')}}">{{ __('customLanguage.Division List')}}</a>
-                  </li>
-                 
-                </ul>
-              </div>
-            </li> -->
+
 
               <li class="nav-item">
               <a class="nav-link" href="{{route('admin.district.list')}}">
