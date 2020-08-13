@@ -1,4 +1,4 @@
-@extends('admin.pages.user.master')
+@extends('admin.pages.profil.master')
 @section('sub-content')
 <div class="container mb-2 "> 
 

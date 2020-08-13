@@ -18,7 +18,7 @@ class AdminController extends Controller
 	public function adashboard()
 	{
 		$admin = Auth::user();
-		return view('admin.pages.user.dashboard',compact(
+		return view('admin.pages.profil.dashboard',compact(
 			'admin'));
 	}
 
@@ -27,7 +27,7 @@ class AdminController extends Controller
 	{
 
 		$admin = Auth::user();
-		return view('admin.pages.user.profile',compact(
+		return view('admin.pages.profil.profile',compact(
 			'admin'));
 	}
 

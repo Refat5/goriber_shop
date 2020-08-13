@@ -193,10 +193,10 @@ Route::post('/delete/{id}','Backend\BrandController@delete')->name('admin.brands
 
 Route::group(['prefix' => 'district'],function(){
 
-Route::get('/create','Backend\DistrictController@create')->name('admin.district.create');
+
 Route::post('/store','Backend\DistrictController@store')->name('admin.district.store');
 Route::get('/list','Backend\DistrictController@list')->name('admin.district.list');
-Route::get('/edit/{id}','Backend\DistrictController@edit')->name('admin.district.edit');
+
 Route::post('/edit/{id}','Backend\DistrictController@update')->name('admin.district.update');
 Route::post('/delete/{id}','Backend\DistrictController@delete')->name('admin.district.delete');
 
