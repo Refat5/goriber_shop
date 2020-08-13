@@ -19,7 +19,7 @@
                                 <div class="modal-body">
                        <form action="{{route('admin.district.store')}}" method="post"  >
                       @csrf
-                      @include("admin.pages.message.validate ")
+                    
 
                        <div class="form-group">
 
@@ -97,17 +97,18 @@
                                   </div>
                                   <div class="modal-body">
                      <form action="{{route('admin.district.update',$district->id)}}" method="post"  >
-                      @csrf
-                      @include("admin.pages.message.validate ")
-                   
-                    <div class="form-group">
-                      <label>District Name</label>
-                      <input type="text" class="form-control form-control-lg" aria-label="Username" name="name" value="{{$district->ds_name}}">
+                   @csrf
+
+                          <div class="form-group">
+                      <label class="col-md-4">District Name</label>
+                      <input type="text" class="form-control col-md-6" aria-label="Username" name="name" value="{{$district->ds_name}}" required autofocus="name">
                     </div>
+                   
+        
                     <div class="form-group">
 
-                    <label>Select A Division For this District</label>
-                      <select class="form-control" name="division_id">
+                    <label class="col-md-4">Select A Division For this District</label>
+                      <select class="form-control col-md-6" name="division_id" required="" autofocus="division_id">
                         <option value=""> Please select a District</option>
                         @foreach ($divisions as $division)
                           
