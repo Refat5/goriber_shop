@@ -47,31 +47,16 @@ class DistrictController extends Controller
     	
      }
 
-
+ 
 
       public function list()
     {
+      $divisions = Division::orderBY('d_priority','asc')->get();
     	$districts = District::orderBY('ds_name','asc')->get();
-    	return view('admin.pages.district.index',compact('districts'));
+    	return view('admin.pages.district.index',compact('districts','divisions'));
 
     }
-     public function edit($id)
-     {
-     	$divisions = Division::orderBY('d_priority','asc')->get();
-      $id=Crypt::decryptString($id);
-     	$district = District::find($id);
-     	if (!is_null($district)) 
-     	{
-     	  return view('admin.pages.district.edit',compact('district','divisions'));	
-     	}
-     	else
-     	{
-     		return redirect()->route('admin.district.list');
-     	}
-     	
-
-    	
-     }
+    
       public function update(Request $request,$id)
     {
     	$request->validate

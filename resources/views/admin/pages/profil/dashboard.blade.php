@@ -1,10 +1,10 @@
-@extends('admin.pages.user.master')
+@extends('admin.pages.profil.master')
 @section('sub-content')
 <div class="container ">
 	<h2 > Welcome  {{ Auth::user()->name }} </h2>
 	<p>You can change tour profile and every information here..</p>
 
-	<hr>
+	<hr> 
 	
 
 	<div class="row">
