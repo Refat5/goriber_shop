@@ -87,7 +87,7 @@ class OrderController extends Controller
         $order = Order::find($id);
 
         $pdf = PDF::loadView('admin.pages.order.invoice', compact('order'));
-        return view('admin.pages.order.invoice',compact('order'));
+       return view('admin.pages.order.invoice',compact('order'));
 
         /*return $pdf->stream('invoice.pdf');*/
     }
