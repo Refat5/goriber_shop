@@ -6,11 +6,31 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
 use App\wishlist;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class WishlistController extends Controller
 {
    public function index()
    {
+    // $role = Role::create(['name' => 'Admin']);
+    //$role = Role::create(['name' => 'super Admin']);
+
+    // $permission = Permission::create(['name' => 'add Product']);
+    //$permission = Permission::create(['name' => 'edit Product']);
+     $role = Role::findById(1);
+     $permission = Permission::findById(3);
+    //add relation 
+     //$role->givePermissionTo($permission);
+
+    //remove relation
+     
+    //for remove permission use permission id
+        //$role->revokePermissionTo($permission);
+     //remove for role(not working)
+    //  $permission->removeRole($role);
+   
+
     return view('pages.product.partials.wishlist');
    }
 
