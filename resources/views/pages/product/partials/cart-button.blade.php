@@ -6,4 +6,4 @@
 	
 </form> -->
  
-<button type="button" class="btn buttonc " id="cart" onclick="addCart('{{$pro->id}}')"><i class="fa fa-cart-plus"></i> Cart Add</button>
+<button type="button" class="btn buttonc " id="cart" onclick="addCart('{{$pro->id}}')"><i class="fa fa-cart-plus"></i> Cart</button>

@@ -62,6 +62,14 @@ html {
 .button:hover {
   background-color: #00B5ED;
 }
+.overlayAbout{
+  position: absolute;
+  margin-left: 30%;
+  background: rgb(6 5 5 / 80%);
+  margin-top: 6rem;
+  
+
+}
 
 @media screen and (max-width: 650px) {
   .column {
@@ -73,10 +81,15 @@ html {
 </head>
 <body>
 
-<div class="about-section ">
-  <h1>About Us Page</h1>
+<div class="about-section">
+
+<div class="overlayAbout">
+<h1>About Us Page</h1>
   <p>Some text about who we are and what we do.</p>
   <p>Resize the browser window to see that this page is responsive by the way.</p>
+
+</div>
+
 </div>
 
 <h2 style="text-align:center" class="mt-5 forh3 ">Our Team</h2>
