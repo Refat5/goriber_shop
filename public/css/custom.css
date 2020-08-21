@@ -230,16 +230,20 @@ for slider*/
  }
 
  .about-section {
-  background-image: url('../images/about.jpeg');
-  padding: 50px;
+  background-image: url('../images/page2.jpeg');
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   
-  color: black;
+  color: rgb(236, 227, 227);
 }
  .about-sectionOverlay
  {
     position: absolute;
-     padding: 50px;
+     padding: 300px;
      width: 100%;
      background: rgba(0,0,0,0.6);
  }

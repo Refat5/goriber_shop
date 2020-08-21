@@ -3,7 +3,7 @@
 					@foreach ($product as $pro)
 					
 
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="card">
 							@php $i = 1; @endphp
 							@foreach ($pro->Images as $img)
@@ -18,12 +18,12 @@
 
 
 							<div class="card-body">
-								<h4 class="  card-title">
+								<h6 class="  card-title">
 									<a href="{{route('product.show', $pro->p_slug)}}">{{$pro->p_title}}</a>
-								</h4>
+								</h6>
 								<p class="card-text">${{$pro->p_price}}</p>
 								@include('pages.product.partials.cart-button')
-								<button type="button" class="btn buttonw" id="wishbutton{{$pro->id}}" onclick="wishlist('{{$pro->id}}')"><i class="fa fa-heart" ></i> Wishlist</button>
+								<button type="button" class="btn buttonw" id="wishbutton{{$pro->id}}" onclick="wishlist('{{$pro->id}}')"><i class="fa fa-heart" ></i> Wish</button>
 							</div>
 						</div>
 					</div>	

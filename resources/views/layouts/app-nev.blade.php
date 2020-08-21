@@ -10,7 +10,7 @@
     <span class="navbar-toggler-icon"></span>
   </button> -->
   <a class="navbar-brand" href="{{route('index')}}">
-    <img src="{{asset('images/logo2.png')}}" height="50px;" width="210">
+    <img src="{{asset('images/mlogo.svg')}}" height="60" width="80">
   </a>
    
   <div class="collapse navbar-collapse topTitle" id="navbarTogglerDemo03">
@@ -34,7 +34,10 @@
        <li class=" {{Route::is('contact') ? 'active' : '' }}">
          <a class="nav-link fdesign" href="{{route('contact')}}"><i class="fa fa-phone "></i> Contact </a>
       </li>
-
+          
+      <li class=" {{Route::is('contact') ? 'active' : '' }}">
+         <a class="nav-link fdesign" href="{{route('contact')}}"><i class="fas fa-gift "></i> Donation </a>
+      </li>
     </ul>
 
      
