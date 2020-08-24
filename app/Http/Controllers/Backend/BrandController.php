@@ -7,6 +7,9 @@ use App\Brand;
 use Image;
 use File;
 use JsValidator;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+use App\Admin;
 class BrandController extends Controller
 {
 
@@ -68,7 +71,36 @@ class BrandController extends Controller
 
       public function list()
     {
+         // $role = Role::create(['name' => 'super Admin']);
+         // $permission = Permission::create(['name' => 'edit Product']);
+         // 
+         // $role = Role::findById(3);
+
+         // $role->givePermissionTo($permission);
+         
+         //modal has permission table 
+         // auth()->user()->givePermissionTo('add Product');
+          
+
+
+         // model has role table 
+         // auth()->user()->assignRole('super Admin');
+          
+
+
+
     	$brands = Brand::orderBY('id','desc')->get();
+      //check user all permission 
+      // return auth()->user()->getAllPermissions();
+      
+
+
+      // remove modal has permissio table 
+      // return auth()->user()->revokePermissionTo('add Product');
+      
+
+      //remove modal has role table
+      // return auth()->user()->removeRole('super Admin');; 
     	return view('admin.pages.brands.index',compact('brands'));
 
     }
