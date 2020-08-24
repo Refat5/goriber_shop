@@ -29,13 +29,13 @@
 	  </div>
 
 @endif 
-@if(Session::has('errors'))
+@if(Session::has('ERROR'))
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
 <div class="alert alert-danger">
 	<ul>
-		<p>{{ Session::get('errors') }}</p>
+		<p>{{ Session::get('ERROR') }}</p>
 		
 	</ul>
 	

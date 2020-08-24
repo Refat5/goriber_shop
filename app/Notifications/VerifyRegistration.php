@@ -10,6 +10,7 @@ use Illuminate\Notifications\Notification;
 class VerifyRegistration extends Notification
 {
     use Queueable;
+    private $details; 
 
     /**
      * Create a new notification instance.
@@ -19,6 +20,7 @@ class VerifyRegistration extends Notification
     public function __construct($user)
     {
         $this->user = $user;
+        // $this->details =$details; 
        
     }
 
@@ -42,6 +44,11 @@ class VerifyRegistration extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
+        // ->greeting($this->details['greeting'])
+        // ->line($this->details['body'])
+        // ->action($this->details['actionText'],$this->details['mysite'])
+        //  ->line($this->details['thanks']);
+
                     ->line('Confirm Your Email..')
                     ->action('Click here to  activate ', route('user.verification',$this->user->remember_token))
                     ->line('Thank you for using our application!');
