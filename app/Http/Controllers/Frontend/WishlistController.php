@@ -18,8 +18,8 @@ class WishlistController extends Controller
 
     // $permission = Permission::create(['name' => 'add Product']);
     //$permission = Permission::create(['name' => 'edit Product']);
-     $role = Role::findById(1);
-     $permission = Permission::findById(3);
+     // $role = Role::findById(1);
+     // $permission = Permission::findById(3);
     //add relation 
      //$role->givePermissionTo($permission);
 
@@ -29,6 +29,8 @@ class WishlistController extends Controller
         //$role->revokePermissionTo($permission);
      //remove for role(not working)
     //  $permission->removeRole($role);
+   
+
    
 
     return view('pages.product.partials.wishlist');

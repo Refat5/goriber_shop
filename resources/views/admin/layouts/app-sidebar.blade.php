@@ -31,6 +31,17 @@
                 <span class="menu-title">{{ __('customLanguage.Manage Slider')}}</span>
               </a>
             </li>
+                    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    User permission
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Roles</a>
+    <a class="dropdown-item" href="#">Permissions</a>
+    <a class="dropdown-item" href="#">Roles Permission</a>
+    <a class="dropdown-item" href="#">User Roles</a>
+  </div>
+</div>
 
              <li class="nav-item">
               <a class="nav-link" href="{{route('admin.order.list')}}">
@@ -115,8 +126,8 @@
               </a>
             </li>
 
-
           </ul>
+
         </nav>
         <!-- partial -->
         <div class="main-panel">
