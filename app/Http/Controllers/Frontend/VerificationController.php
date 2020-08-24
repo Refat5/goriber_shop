@@ -10,21 +10,29 @@ class VerificationController extends Controller
 {
     public function verify($token)
     {
-    	$user = User::where('remember_token',$token)->first();
-    	if (!is_null($user))
-    	 {
-    		$user->status = 1;
-    		$user->remember_token = NULL;
-    		$user->save();
-    		session()->flash('success','You are registered successfully!!');
-    	return redirect('login');
-    	}
-    	else
-    	{
-    		session()->flash('errors','Sorry!Your token is not matched!!');
-    	return redirect()->route('index');
-    	}
-    	
+        // $details =[
+        //     'greeting' => 'Hello'.$user->first_name,
+        //     'body'    => 'Confirm Your Email..',
+        //     'thanks'    => 'Thanks Your For Register..',
+        //     'actionText'    => 'Please Loging',
+        //     'mysite'    => route('user.verification',$this->user->remember_token)
+
+        // ];
+        $user = User::where('remember_token',$token)->first();
+        if (!is_null($user))
+         {
+            $user->status = 1;
+            $user->remember_token = NULL;
+            $user->save();
+            session()->flash('success','You are registered successfully!!');
+        return redirect('login');
+        }
+        else
+        {
+            session()->flash('errors','Sorry!Your token is not matched!!');
+        return redirect()->route('index');
+        }
+         
 
     }
 }

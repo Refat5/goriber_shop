@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
+                          @include("pages.msg.msg ")
                         <div class="form-group row">
                             <div class="col-md-4"></div>
 

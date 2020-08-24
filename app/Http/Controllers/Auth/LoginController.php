@@ -30,6 +30,7 @@ class LoginController extends Controller
      *
      * @var string
      */
+    public const HOME = '/';
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
@@ -54,14 +55,14 @@ class LoginController extends Controller
             //login this user
             if (Auth::guard('web')->attempt(['email' => $request->email,'password'=> $request->password], $request->remember))
              {
-                return redirect('')->intended(route('index'));
+                return redirect('/');
                
             }
             else
             {
 
-                  session()->flash('error','Invalide Login!!');
-                   return redirect('')->route('login');
+                  session()->flash('ERROR','Invalide Login!!');
+                   return back();
 
             }
          }
@@ -77,7 +78,7 @@ class LoginController extends Controller
             }
             else
             {
-                  session()->flash('error','Please Login first!!');
+                  session()->flash('ERROR','Please Login first!!');
         return redirect('/')->route('login');
             }
          }
