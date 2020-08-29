@@ -10,14 +10,14 @@ class VerificationController extends Controller
 {
     public function verify($token)
     {
-        // $details =[
-        //     'greeting' => 'Hello'.$user->first_name,
-        //     'body'    => 'Confirm Your Email..',
-        //     'thanks'    => 'Thanks Your For Register..',
-        //     'actionText'    => 'Please Loging',
-        //     'mysite'    => route('user.verification',$this->user->remember_token)
+        $details =[
+            'greeting' => 'Hello'.$user->first_name,
+            'body'    => 'Confirm Your Email..',
+            'thanks'    => 'Thanks Your For Register..',
+            'actionText'    => 'Please Loging',
+            'mysite'    => route('user.verification',$this->user->remember_token)
 
-        // ];
+        ];
         $user = User::where('remember_token',$token)->first();
         if (!is_null($user))
          {

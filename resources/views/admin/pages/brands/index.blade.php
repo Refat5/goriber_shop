@@ -20,7 +20,7 @@
                         @php $i=1;@endphp
                         @foreach ($brands as $brand)
                         <tr>
-                          <td> {{$i++}}</td>
+                          <td> $i++</td>
                           <td> {{$brand->b_name}} </td>
                           <td>
                             <img src="{{asset('images/Brands/'.$brand->b_image)}}">
