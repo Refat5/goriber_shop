@@ -76,7 +76,7 @@ class RegisterController extends Controller
             'division_id' => ['required', 'numeric'],
             'district_id' => ['required', 'numeric'],
             'mobile_no' => ['required', 'max:15'],
-            'street_address' => ['required', 'max:100'],
+            
 
 
 

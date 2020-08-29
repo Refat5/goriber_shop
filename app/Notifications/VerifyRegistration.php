@@ -7,11 +7,11 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class VerifyRegistration extends Notification
+class VerifyRegistration extends Notification 
 {
     use Queueable;
     private $details; 
-
+    public $user;
     /**
      * Create a new notification instance.
      *
@@ -20,7 +20,7 @@ class VerifyRegistration extends Notification
     public function __construct($user)
     {
         $this->user = $user;
-        // $this->details =$details; 
+         
        
     }
 
