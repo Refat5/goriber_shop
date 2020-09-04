@@ -9,6 +9,12 @@ use App\Cart;
 
 class CartController extends Controller
 {
+    public function hello()
+    {
+
+      echo"helo";
+
+    }
 
    public function index()
     {

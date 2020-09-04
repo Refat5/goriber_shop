@@ -42,17 +42,17 @@ Route::post('/profile/update','Frontend\UserController@profileUpdate')->name('us
 
 });
 
-//Cart Route 
-Route::group(['prefix' => 'cart'],function(){
+// //Cart Route 
+// Route::group(['prefix' => 'cart'],function(){
 	
 
-Route::get('/','API\CartController@index')->name('carts');
-Route::post('/store','API\CartController@store')->name('carts.store');
-Route::post('/update/{id}','API\CartController@update')->name('carts.update');
-Route::post('/delete/{id}','API\CartController@destroy')->name('carts.delete');
+// Route::get('/','API\CartController@index')->name('carts');
+// Route::post('/store','API\CartController@store')->name('carts.store');
+// Route::post('/update/{id}','API\CartController@update')->name('carts.update');
+// Route::post('/delete/{id}','API\CartController@destroy')->name('carts.delete');
 
 
-});
+// });
 
 
 //Wishlist Route 
