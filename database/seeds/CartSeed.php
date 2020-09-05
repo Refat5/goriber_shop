@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Cart;
+use Illuminate\Support\Str;
 class CartSeed extends Seeder
 {
     /**
@@ -12,12 +13,12 @@ class CartSeed extends Seeder
     public function run()
     {
         for ($i=0; $i < 20; $i++) {
-            Brand::create([
-            'product_id' => Str::random(6),
-            'user_id' => Str::random(5),
-            'order_id' => Str::random(5),
-            'ip_address' => Str::random(5),
-            'product_quantity' => Str::random(5),
+            Cart::create([
+            'product_id' => 6,
+            'user_id' => 5,
+            'order_id' => 5,
+            'ip_address' => 5,
+            'product_quantity' => 5,
 
         ]);
      }
