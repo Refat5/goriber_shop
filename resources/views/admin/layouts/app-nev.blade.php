@@ -46,6 +46,7 @@
               <script type="text/javascript">
                 $(".lang_choose").change(function(){
                   var language=$(this).val();
+                  
 
 
                   $.ajax({
@@ -54,6 +55,7 @@
                
                success:function(data) {
                   console.log(data);
+                  
                   location.reload();
                }
             });
